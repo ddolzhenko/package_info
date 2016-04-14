@@ -1,0 +1,7 @@
+# reserved words:
+# version, packages, define, import, self
+# on_setup
+
+packages:
+    boost: !include boost
+    gtest: !include gtest

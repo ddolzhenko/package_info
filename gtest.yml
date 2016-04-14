@@ -1,0 +1,33 @@
+
+repo:
+    type: git
+    url: https://github.com/google/googletest.git
+    tag: release-{self.version}
+
+scripts:
+    store:
+        - sync repo
+
+    embed:
+        - link googletest/include/gtest include/gtest
+        - link googlemock/include/gmock include/gmock
+
+    build:
+        - x3
+
+versions:
+    1.4.0:
+    1.5.0:
+    1.6.0:
+    1.7.0:
+
+packages:
+    googletest:
+        on_embed: link googletest/include/gtest include/gtest
+        versions:
+            1.7.0:
+
+    googlemock:
+        on_embed: link googlemock/include/gmock include/gmock
+
+

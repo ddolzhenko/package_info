@@ -1,0 +1,15 @@
+repo:
+    type: svn
+    url: http://svn.boost.org/svn/boost/tags/release/Boost_{self.version}/
+
+scripts:
+    store:
+        - sync repo
+
+versions:
+    1.16.1:
+    1.59.0:
+        dependencies: [gtest]
+
+
+
