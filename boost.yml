@@ -1,8 +1,10 @@
 repo:
-    type: svn
-    url: http://svn.boost.org/svn/boost/tags/release/Boost_{self.version}/
+    type: git
+    url: https://github.com/boostorg/boost.git
+    tag: boost-{self.version}
 
 scripts:
+
     store:
         - sync repo
 
